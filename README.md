@@ -1,4 +1,8 @@
-# Improve City 311 Services Using ML: Predicting Overdue 311 Calls
+# Improve City 311 Services Using ML/AI: Predicting Overdue 311 Calls
+
+
+
+
 
 ## Capstone ML Project Goal: 
 
@@ -18,7 +22,9 @@ The three data sources were merged for the capstone project
 2) Neighborhood Characteristics (88 neighborhoods)
 3) Geo Locations (latitude and longitude)
 
-## Methodology: CRISP-DM
+## Methodology: CRISP-DM 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/4c48f9af-b92c-4a2e-94f1-25e3393aeaf8) 
 
 
 Business Understanding:
