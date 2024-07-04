@@ -1,16 +1,26 @@
-#Improve City 311 Services Using ML: Predicting Overdue 311 Calls
-Capstone ML Project Goal:
-Build a model incorporating neighborhood socio-economic characteristics, 311 call details, and geo-locations to predict the outcome of 311 calls—whether they will be on time or overdue. By exploring and generating relevant features, I aim to identify an optimized classifier.
+# Improve City 311 Services Using ML: Predicting Overdue 311 Calls
 
-ML Techniques:
-Supervised Learning: Various classifiers such as logistic regression, decision trees, random forests, and gradient boosting machines. Unsupervised Learning: K-Means clustering and DBSCAN based on geo and neighborhood characteristics. NLP techniques like TF-IDF and word embeddings to analyze notes and comments.
+## Capstone ML Project Goal: 
 
-Data Sources:
-(The three data sources were merged for the capstone project)
+Build a model incorporating neighborhood socio-economic characteristics, 311 call details, and geo-locations to predict the outcome of 311 calls—whether they will be on time or overdue. By exploring and generating relevant features, I aim to identify an optimized classifier. 
 
-311 requests (January to June 2024) (over 163,548 records) Neighborhood Characteristics (88 neighborhoods) Geo Locations (latitude and longitude)
 
-Methodology: CRISP-DM
+## ML Techniques:
+
+Supervised Learning: Various classifiers such as logistic regression, decision trees, random forests, and gradient boosting machines. Unsupervised Learning: K-Means clustering and DBSCAN based on geo and neighborhood characteristics. NLP techniques like TF-IDF and word embeddings to analyze notes and comments. 
+
+
+## Data Sources: 
+
+The three data sources were merged for the capstone project
+
+1) 311 requests (January to June 2024) (over 163,548 records)
+2) Neighborhood Characteristics (88 neighborhoods)
+3) Geo Locations (latitude and longitude)
+
+## Methodology: CRISP-DM
+
+
 Business Understanding:
 Stakeholders: City management, 311 operators, and citizens.
 
