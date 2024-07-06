@@ -328,7 +328,118 @@ Feature importance, KNN interpretations.
 Highlighted insights. 
 
 
+# Model Summary for Business Stakeholders
 
+0. KNN Classifier for 311 cases
+   
+2. Optimal Thresholds for Predictions:
+
+Clusters 1, 2, 3: Optimal Threshold = 0.29
+Cluster 0: Optimal Threshold = 0.40
+2. Performance Insights:
+
+Unified Strategy: The similar optimal thresholds across clusters 1, 2, and 3 suggest that a unified strategy can effectively improve detection rates in these areas.
+Tailored Approach for Cluster 0: The higher optimal threshold for cluster 0 indicates a need for a more conservative and customized strategy in this area.
+3. Balancing Detection and Efficiency:
+
+Clusters 1, 2, 3: As the model aims to detect more overdue cases, there is a trade-off with a higher rate of cases being flagged unnecessarily.
+Cluster 0: The higher threshold helps balance the detection process, minimizing unnecessary flags but potentially missing some overdue cases.
+4. Business Impact:
+
+Enhanced Detection: Implementing optimal thresholds enhances the model's ability to identify overdue cases, ensuring timely interventions.
+Efficient Resource Management: Monitoring and managing unnecessary flags to ensure resources are focused on genuine overdue cases.
+Optimized Resource Allocation: A unified strategy for clusters 1, 2, and 3 and a tailored strategy for cluster 0 will optimize resource allocation and improve service quality.
+5. Recommendations:
+
+Adopt Optimal Thresholds: Implement the optimal thresholds to balance the detection and efficiency effectively.
+Monitor Performance: Continuously monitor model performance to ensure it aligns with business objectives.
+Tailored Approaches: Use a unified approach for clusters 1, 2, and 3, and a tailored approach for cluster 0 for optimal resource management.
+Conclusion:
+By leveraging predictive analytics, we can transform 311 operations to be more efficient and responsive. This approach enables targeted resource allocation, timely interventions for high-priority cases, and improved overall service quality, ultimately leading to higher citizen satisfaction.
+
+# Important features
+
+Important Factors Influencing Overdue 311 Cases
+Key Variables:
+Create_To_close_Diff
+SLA_Dynamic_Workload
+Due_Day_Of_Week_Thursday
+Division_Top_Collections
+Normalized_SLA_Days
+Queue_Top_UNKNOWN
+sentiment_polarity
+Incident_Case_Type_Binned_Missed Garbage Pickup
+sentiment_subjectivity
+na_Built_1939_or_earlier
+h_3_bedrooms
+et_White
+h_Mobile_home
+Creation_Flag_Regular Case
+d_Median_Age
+
+Explanation for Stakeholders
+1. Create_To_close_Diff
+
+Impact: The time difference between case creation and closure is the most significant factor. A longer time to close a case indicates a higher likelihood of it becoming overdue.
+Business Insight: Focusing on reducing the time it takes to resolve cases can significantly decrease overdue incidents.
+2. SLA_Dynamic_Workload
+
+Impact: The workload dynamic of the service level agreement (SLA) affects the likelihood of cases being overdue. Higher workloads can lead to more overdue cases.
+Business Insight: Managing workloads more effectively and ensuring that SLAs are realistic and achievable can help in reducing overdue cases.
+3. Due_Day_Of_Week_Thursday
+
+Impact: Cases due on Thursdays are more likely to become overdue compared to other days.
+Business Insight: Understanding patterns related to specific days can help in planning and allocating resources more efficiently to prevent overdue cases.
+4. Division_Top_Collections
+
+Impact: Cases related to top collections divisions have a notable impact on whether they become overdue.
+Business Insight: Focusing on improving processes within the collections division can help in managing overdue cases more effectively.
+5. Normalized_SLA_Days
+
+Impact: The normalized number of days within the SLA impacts the likelihood of cases becoming overdue. Shorter SLAs tend to reduce overdue cases.
+Business Insight: Reviewing and adjusting SLAs to ensure they are appropriately set can help in managing case timelines more effectively.
+6. Queue_Top_UNKNOWN
+
+Impact: Cases in the unknown queue have a significant likelihood of becoming overdue.
+Business Insight: Identifying and addressing issues within the unknown queue can help in reducing overdue cases.
+7. Sentiment Polarity
+
+Impact: The sentiment expressed in the case description influences the likelihood of it becoming overdue. Negative sentiment may indicate more complex or urgent issues.
+Business Insight: Using sentiment analysis to prioritize and address cases with negative sentiment can help in preventing them from becoming overdue.
+8. Incident_Case_Type_Binned_Missed Garbage Pickup
+
+Impact: Missed garbage pickup cases have a higher likelihood of becoming overdue.
+Business Insight: Streamlining processes for handling missed garbage pickups can help in reducing overdue cases in this category.
+9. Sentiment Subjectivity
+
+Impact: The subjectivity of the sentiment in case descriptions also affects the likelihood of cases becoming overdue. Highly subjective cases may indicate more complex issues.
+Business Insight: Addressing highly subjective cases promptly can help in managing and reducing overdue cases.
+10. na_Built_1939_or_earlier
+
+Impact: Cases related to buildings constructed in 1939 or earlier are more likely to become overdue.
+Business Insight: Focusing on addressing issues in older buildings can help in reducing overdue cases in these areas.
+11. h_3_bedrooms
+
+Impact: Cases related to homes with three bedrooms have a notable impact on overdue cases.
+Business Insight: Understanding patterns related to property size can help in resource planning and case management.
+12. et_White
+
+Impact: The ethnicity of the neighborhood (specifically areas with a higher percentage of White residents) affects the likelihood of cases becoming overdue.
+Business Insight: Tailoring services to specific neighborhood demographics can improve service efficiency and reduce overdue cases.
+13. h_Mobile_home
+
+Impact: Cases related to mobile homes have a significant likelihood of becoming overdue.
+Business Insight: Addressing unique issues related to mobile homes can help in managing overdue cases.
+14. Creation_Flag_Regular Case
+
+Impact: Regular cases, as opposed to special cases, have a significant impact on overdue likelihood.
+Business Insight: Streamlining processes for regular cases can help in managing overall case timelines.
+15. d_Median_Age
+
+Impact: The median age of residents in a neighborhood influences the likelihood of cases becoming overdue.
+Business Insight: Understanding demographic influences can help in tailoring services and resource allocation to reduce overdue cases.
+Conclusion
+By focusing on these key variables, the city management and 311 operators can develop targeted strategies to improve service delivery, prioritize resources effectively, and ultimately enhance citizen satisfaction.
 
 Next Step and Limitations
 1. I should leverage D-KCON natural classifere.
