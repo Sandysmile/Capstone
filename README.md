@@ -141,9 +141,10 @@ The data is super imbalanced.
 
 4. Drop unuseful features based on my business reserach.
 
-5. Create Features that won't cause data leakage (beflore splitting)
-
-6. Create geo and neighborhood clusters for segment analaysis 
+5. Create New Features
+   For instance, 
+   
+7. Create geo and neighborhood clusters for segment analaysis 
    Create Geoclusters and Neighborhood Clusters to understand the innate features of 311 Calls (why did I do this step before      spliting. My assumation is Geo locations are constant, so are neighborhood clusters0. they are not changes as randomely as 
    311 reported cases.
 
@@ -155,17 +156,27 @@ The data is super imbalanced.
    Breakthrough Points:
    Based on the cluster mapping. I choose rerun models based on neighborhood clusters due to it shows clear patterns of cases overdues. The four clusters natural division make the four subset ofs overall data more balanced than the whole dataset
 
+8. Final Dataset for Modelling
 
-Data Splitting and Modelling Steps:
-
-Step 1: seperate the Closed Cases from open cases(without valid closing dates): Use the closed cases to create both a training (training and testing set) and a validation set. 
-This allows me to train the model and evaluate its performance on known outcomes. ( Capstone Project)
-Split the whole dataset into closed cases ( Trained and testing datasets) and open cases (validation dataset)
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/670c2c20-3921-4dc4-8f5f-06ce30c5a5bb) 
 
 
-Step 2: run a basemodel using Random Forest and all classifers to identify the optimized classifer.
+##  EDA for closed Cases only 
 
-Step 3: run classifiers again in each of four neighborhood clusters. 
+1. categorical variables plotting
+2. numerical variables (correlations and remove outliers)
+3. 
+
+# Data Splitting and Modelling Steps:
+
+Step 0: seperate the Closed Cases from open cases(without valid closing dates): Use the closed cases to create both a training (training and testing set) and a validation set. 
+This allows me to train the model and evaluate its performance on known outcomes. 
+
+Step 1: Split the whole dataset into closed cases ( Trained and testing datasets) and open cases (validation dataset)
+
+Step 2: Run a basemodel using Random Forest and all classifers to identify the optimized classifer.
+
+Step 3: Run classifiers again in each of four neighborhood clusters. 
 
 
 
