@@ -180,7 +180,11 @@ Step 3: Run classifiers again in each of four neighborhood clusters.
 
 
 
-# Model Performance Comparision
+# Model Performance Comparision 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/04bcccd2-d73a-4ef9-ab79-013a03305ebd) 
+
+# Model Comparision for each cluster.
 
 
 
