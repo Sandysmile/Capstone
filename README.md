@@ -146,43 +146,54 @@ The data is super imbalanced.
    
    ![image](https://github.com/Sandysmile/Capstone/assets/20648423/eacb3ee9-32ef-4d8b-acfa-1a6198517d05)
    Findings.
+
    Breakthrough Points:
    Based on the cluster mapping. I choose rerun models based on neighborhood clusters due to it shows clear patterns of cases overdues. The four clusters natural division make the four subset ofs overall data more balanced than the whole dataset
 
 
-8. Split the whole dataset into closed cases ( Trained and testing datasets) and open cases (validation dataset)
-
-
-
 Data Splitting and Modelling Steps:
 
-Step 1: seperate the Closed Cases from open cases(without valide closing dates): Use the closed cases to create both a training and a validation set. This allows me to train the model and evaluate its performance on known outcomes. ( Capstone Project)
-
-Step 2: run a basemodel using Random Forest and all classifers to identify the optimized mode. ( Capstone Project)
-
-Step 3: run classifers again in a segmented datsets, say the risked neighborhoods vs. non risked neighborhoods. ( Capstone Project)
+Step 1: seperate the Closed Cases from open cases(without valid closing dates): Use the closed cases to create both a training (training and testing set) and a validation set. 
+This allows me to train the model and evaluate its performance on known outcomes. ( Capstone Project)
+Split the whole dataset into closed cases ( Trained and testing datasets) and open cases (validation dataset)
 
 
-Step 4: run classifiers again in a segmented dataset based on council district. risk concil district vs. non risked council district.( Capstone Project)
+Step 2: run a basemodel using Random Forest and all classifers to identify the optimized classifer.
 
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/0a4d83c5-6fe4-43bc-b78c-53f545ff7d48)
-
-
-Step 5: Use Open Cases for Prediction (testing set): Once I have validated the model on closed cases, I use it to predict the outcomes for the open cases. (future Project)
-
-Step 6: Compare the open cases predictions vs. actual outcome and visualize them in Power BI ( future Project)
-
-
-Model Performance Comparision
+Step 3: run classifiers again in each of four neighborhood clusters. 
 
 
 
-Feature Importance Analysis
+# Model Performance Comparision
+
+
+
+
+# the best classifier: KNN Classifer (Why?)
+
+1. Geographical Clustring: 311 requests often have strong spatial dependencies. similar request tend to come from nearby locations, makiing the spatial aspect a natural fit for KNN.
+2. Requests with similar characteristics(type of complaints, time of year, socioeconbomic factors of neighborhoods) might be more common, and KNN natually leverages this similarity
+3. KNN is relatively straightforward to implement and understand,. 
+
+
+
 
 
 Business Inights (Stateholders)
 
+Feature importance, KNN interpretations. 
+Highlighted insights. 
 
-Next Step and Limitation
 
+
+
+Next Step and Limitations
+1. i should leverage D-KCON natural classifere.
+2. my computation power is limited, I can't run or hypertune models with more parameters.
+3. my dataset is limited. idealy it should include the whole year of data.
+4. ideally I can further validate my model using open cases. however, since some of cases are not closed yet. I can only perform it later after the capstone project.
+5. More feature engineering features by chatting with 311 operators, etcs. to find more continuted features to be include the models.
+6. more reiterative modelling to
+7. Ideally I can include 311 satisifiction survey data. currently I don't have enough data to be considered.
+8. Refine the presentation to business stateholders to show the effectiveness of the model. 
 
