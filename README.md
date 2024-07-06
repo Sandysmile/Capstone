@@ -68,6 +68,11 @@ Call Volume and Issue Severity: A higher number of calls in a neighborhood indic
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/c5bbc932-ba16-4a70-8236-a21b708c5188) 
 
 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/de4e6f7b-0acc-4ac2-bbec-a78fc0179f99) 
+
+
+
+
 
 3) 311 Calls
    
