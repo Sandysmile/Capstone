@@ -61,7 +61,12 @@ Call Volume and Issue Severity: A higher number of calls in a neighborhood indic
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/8b9878d3-e3ae-4a32-8b64-884f46936822) 
 
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/6d184a3a-cc78-418a-97c3-84f1e2e0abcf)
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/bcd58ad1-6d7d-4cad-97d2-44fedb66c0d6) 
+
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/c5bbc932-ba16-4a70-8236-a21b708c5188) 
+
 
 
 3) 311 Calls
@@ -75,6 +80,7 @@ Call Patterns and Trends: Analyzing the patterns and trends in call types to und
 Case Resolution Complexity: The resolution time of a case indicates its complexity, where Natural Language Processing (NLP) can analyze comments to determine this.
 Sentiment Analysis: Sentiment analysis of comments can provide insights into public sentiment and the urgency of issues.
 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/6d184a3a-cc78-418a-97c3-84f1e2e0abcf) 
 
 
 4) 311 Operations (Demand and Supply)
