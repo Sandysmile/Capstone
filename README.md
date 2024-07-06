@@ -122,6 +122,30 @@ The data is super imbalanced.
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/35eb2eb7-2dd8-41d6-a892-986e72112ce8) 
 
 
+# Data Understanding: 
+
+## Initial EDA for All Cases ( Closed Cases and Open Cases)
+
+1. Handing Missing Values
+
+2. Understand open cases to plan splitting data strategies without data leakage problem. 
+
+3. Understand date-related columns and coverted them if appliable 
+
+4. Check the imbalance of the dataset
+
+4. Drop unuseful features based on my business reserach.
+
+5. Create Features that won't cause data leakage (beflore splitting)
+
+6. Create geo and neighborhood clusters for segment analaysis 
+   Create Geoclusters and Neighborhood Clusters to understand the innate features of 311 Calls (why did I do this step before      spliting. My assumation is Geo locations are constant, so are neighborhood clusters0. they are not changes as randomely as 
+   311 reported cases. 
+
+7. Split the whole dataset into closed cases ( Trained and testing datasets) and open cases (validation dataset)
+
+
+
 Data Splitting and Modelling Steps:
 
 Step 1: seperate the Closed Cases from open cases(without valide closing dates): Use the closed cases to create both a training and a validation set. This allows me to train the model and evaluate its performance on known outcomes. ( Capstone Project)
