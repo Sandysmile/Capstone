@@ -140,9 +140,17 @@ The data is super imbalanced.
 
 6. Create geo and neighborhood clusters for segment analaysis 
    Create Geoclusters and Neighborhood Clusters to understand the innate features of 311 Calls (why did I do this step before      spliting. My assumation is Geo locations are constant, so are neighborhood clusters0. they are not changes as randomely as 
-   311 reported cases. 
+   311 reported cases.
 
-7. Split the whole dataset into closed cases ( Trained and testing datasets) and open cases (validation dataset)
+   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/8849f0a2-ca14-43e4-b69d-90b04899c2e5)
+   
+   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/eacb3ee9-32ef-4d8b-acfa-1a6198517d05)
+   Findings.
+   Breakthrough Points:
+   Based on the cluster mapping. I choose rerun models based on neighborhood clusters due to it shows clear patterns of cases overdues. The four clusters natural division make the four subset ofs overall data more balanced than the whole dataset
+
+
+8. Split the whole dataset into closed cases ( Trained and testing datasets) and open cases (validation dataset)
 
 
 
@@ -153,7 +161,7 @@ Step 1: seperate the Closed Cases from open cases(without valide closing dates):
 Step 2: run a basemodel using Random Forest and all classifers to identify the optimized mode. ( Capstone Project)
 
 Step 3: run classifers again in a segmented datsets, say the risked neighborhoods vs. non risked neighborhoods. ( Capstone Project)
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/2b4ee75a-7eb8-4caa-9685-0cbac3fcf698)
+
 
 Step 4: run classifiers again in a segmented dataset based on council district. risk concil district vs. non risked council district.( Capstone Project)
 
