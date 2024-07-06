@@ -186,6 +186,14 @@ Step 3: Run classifiers again in each of four neighborhood clusters.
 
 # Model Comparision for each cluster.
 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/6acff82a-7ce4-4fab-bc0d-c1bc356643f9) 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/b0fbedd9-74af-4d1b-af23-aed64afe5a09)
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/efcab3f4-be67-419a-95c9-0294d369590a)  ![image](https://github.com/Sandysmile/Capstone/assets/20648423/bc5d2eba-0ad8-4ee1-b2e4-93332d5203c7) 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/89bdd34d-38bc-4f14-aa52-3b776ffd0b71)  ![image](https://github.com/Sandysmile/Capstone/assets/20648423/b90d314c-105a-4c92-b2cf-f913dc95b628)
+
+
 
 
 
