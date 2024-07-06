@@ -65,8 +65,9 @@ Call Volume and Issue Severity: A higher number of calls in a neighborhood indic
 
 
 3) 311 Calls
-
+   
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/f2be828f-cd6d-4793-81c3-f00bdbfe33fa) 
+
 
 
 Type of Issue: Infrastructure-related issues typically take longer to resolve compared to administrative ones.
@@ -76,28 +77,32 @@ Sentiment Analysis: Sentiment analysis of comments can provide insights into pub
 
 
 
-
-
-3) 311 Operations (Demand and Supply)
+4) 311 Operations (Demand and Supply)
+   
 Service Level Agreement (SLA) Indicators: A higher volume of calls within SLA for the same type of issue suggests effective service and issue sensitivity.
-Business Hours Impact: Cases submitted outside business hours are more likely to be overdue, with weekends and holidays following in likelihood.
+Business Hours Impact: Cases submitted outside business hours are more likely to be overdue, with weekends and holidays following in likelihood. 
+
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/b7969e25-024f-48c3-a89f-d3706ca62a02) 
 
 
-4) Call Volume Impact: High call volume can impact the operational capacity to address issues promptly.
+
+5) Call Volume Impact: High call volume can impact the operational capacity to address issues promptly.
+   
 Operational Capacity: Evaluating the capacity of personnel working on 311 calls, including the impact of after-hours service on call resolution times.
 
-5) 311 Overall Reponse Trends
+6) 311 Overall Reponse Trends
 Historical Response Patterns: Understanding historical response times for different issue types helps in predicting future service levels. Temporal Trends: Analysis of the time of week, month, etc., can reveal patterns in call volumes and service delays.
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/aed93260-f64e-47d7-9293-6162c0c30b1b)
 
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/a34445a4-596f-4cd9-9145-1d72fd6e7271)
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/aed93260-f64e-47d7-9293-6162c0c30b1b) 
 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/a34445a4-596f-4cd9-9145-1d72fd6e7271) 
 
 
 7) Garbadge Collection
-Garbage collection schedules and routes significantly impact the volume and distribution of related 311 calls
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/191856e9-4745-4a6f-abb1-df07c8196764)
+   
+Garbage collection schedules and routes significantly impact the volume and distribution of related 311 calls 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/191856e9-4745-4a6f-abb1-df07c8196764) 
 
 
 8) Tehcnical Integration Barrior
