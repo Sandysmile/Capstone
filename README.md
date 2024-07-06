@@ -190,24 +190,90 @@ Step 3: Run classifiers again in each of four neighborhood clusters.
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/b0fbedd9-74af-4d1b-af23-aed64afe5a09)
 
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/efcab3f4-be67-419a-95c9-0294d369590a)  ![image](https://github.com/Sandysmile/Capstone/assets/20648423/bc5d2eba-0ad8-4ee1-b2e4-93332d5203c7) 
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/89bdd34d-38bc-4f14-aa52-3b776ffd0b71)  ![image](https://github.com/Sandysmile/Capstone/assets/20648423/b90d314c-105a-4c92-b2cf-f913dc95b628)
-
-
-
-
-
 # the best classifier: KNN Classifer (Why?)
 
 1. Geographical Clustring: 311 requests often have strong spatial dependencies. similar request tend to come from nearby locations, makiing the spatial aspect a natural fit for KNN.
 2. Requests with similar characteristics(type of complaints, time of year, socioeconbomic factors of neighborhoods) might be more common, and KNN natually leverages this similarity
 3. KNN is relatively straightforward to implement and understand,. 
 
+## KNN Classifer Confusion Matrix Analysis:
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/efcab3f4-be67-419a-95c9-0294d369590a) 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/bc5d2eba-0ad8-4ee1-b2e4-93332d5203c7) 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/89bdd34d-38bc-4f14-aa52-3b776ffd0b71) 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/b90d314c-105a-4c92-b2cf-f913dc95b628) 
+
+
+# Business Insights Overview
+
+The following insights are based on an analysis of overdue cases across different neighborhoods in the city. Neighborhoods have been grouped into clusters to better understand the patterns and identify areas that may require focused attention.
+
+## K-Nearest Neighbors: Key Insights
+
+1) Cluster 1: 
+
+High False Negative Rate: This cluster has the highest number of false negatives (1594). This means many overdue cases are not being correctly identified.
+Neighborhoods in this Cluster: Brays Oaks, Briar Forest, Clear Lake, Eldridge/West Oaks, Greater Uptown, Gulfton, Memorial, Mid West, Sharpstown, Westchase.
+Action Required: Increase the sensitivity of the model to correctly identify more overdue cases. Consider additional features or improved data quality for these neighborhoods.
+
+2) Cluster 2:
+
+Balanced Performance: This cluster has fewer false positives (190) and false negatives (311), indicating a relatively balanced performance.
+Neighborhoods in this Cluster: Acres Home, Addicks Park Ten, Alief, Carverdale, East Houston, East Little York/Homestead, Fort Bend Houston, Greater Fondren Southwest, IAH/Bush, Inwood, Lake Houston, Northshore, Sunnyside, Willowbrook.
+Action Required: Continue monitoring these neighborhoods but consider slight model adjustments to improve overall accuracy.
+
+
+Cluster 3 
+
+Moderate False Negatives: This cluster has a moderate number of false negatives (376), indicating some overdue cases are missed.
+Neighborhoods in this Cluster: Downtown, East End, Eastside, Edgebrook Area, Eldridge/West Oaks, Harrisburg/Manchester, Meyerland Area, Museum Park, Near Northside, Northside/Northline, South Belt/Ellington, South Main, Spring Branch East, Spring Branch West, Trunkline/Uptown.
+Action Required: Focus on improving recall for these neighborhoods to reduce the number of missed overdue cases.
+
+Cluster 0 
+
+Relatively Balanced Performance: This cluster also shows a relatively balanced performance with 206 false positives and 323 false negatives.
+Neighborhoods in this Cluster: Central Southwest, Greater Heights, Kingwood Area, Magnolia Park, Near Northside, Oak Forest/Garden Oaks, Washington Avenue.
+Action Required: Similar to Cluster 2, maintain current monitoring but explore opportunities for minor improvements.
+
+Recommendations
+Enhance Model Sensitivity: For clusters with high false negatives, adjust model parameters or incorporate additional features to better capture overdue cases.
+Targeted Interventions: Focus interventions on neighborhoods with higher rates of missed overdue cases to ensure timely responses.
+Continuous Monitoring: Maintain regular performance monitoring across all clusters to ensure the model remains effective as new data becomes available.
+By addressing these points, I can improve the accuracy and efficiency of identifying overdue cases, leading to better resource allocation and more timely responses to community needs.
+
+
+## finding optimal threshold for each cluser. 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/634d9669-dff7-4cbf-a33c-052174be90de) 
 
 
 
+Here is a concise comparison based on your results:
 
-Business Inights (Stateholders)
+Cluster 1
+Default Threshold Accuracy: 85.03%
+Optimal Threshold Accuracy: 81.38%
+Trade-Off: Improved recall and precision for overdue cases but increased false positives.
+Cluster 2
+Default Threshold Accuracy: 85.20%
+Optimal Threshold Accuracy: 81.63%
+Trade-Off: Better identification of overdue cases at the expense of more false positives.
+Cluster 3
+Default Threshold Accuracy: 85.02%
+Optimal Threshold Accuracy: 81.17%
+Trade-Off: Increased detection of overdue cases, balancing precision and recall.
+Cluster 0
+Default Threshold Accuracy: 84.60%
+Optimal Threshold Accuracy: 82.65%
+Trade-Off: Improved detection of overdue cases with a slight increase in false positives.
+
+
+
+Next Steps
+Evaluate Precision and Recall: Compare precision and recall metrics for default and optimal thresholds to understand the trade-offs better.
+Consider Business Impact: Evaluate which metric (accuracy vs. recall) aligns best with business objectives.
+
+
 
 Feature importance, KNN interpretations. 
 Highlighted insights. 
@@ -216,7 +282,7 @@ Highlighted insights.
 
 
 Next Step and Limitations
-1. i should leverage D-KCON natural classifere.
+1. I should leverage D-KCON natural classifere.
 2. my computation power is limited, I can't run or hypertune models with more parameters.
 3. my dataset is limited. idealy it should include the whole year of data.
 4. ideally I can further validate my model using open cases. however, since some of cases are not closed yet. I can only perform it later after the capstone project.
