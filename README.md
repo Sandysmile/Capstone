@@ -284,7 +284,45 @@ Next Steps
 Evaluate Precision and Recall: Compare precision and recall metrics for default and optimal thresholds to understand the trade-offs better.
 Consider Business Impact: Evaluate which metric (accuracy vs. recall) aligns best with business objectives.
 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/bb7ce0dc-dca5-46e3-87bc-17985fb7266a) 
 
+
+Key Observations:
+Optimal Thresholds:
+
+Cluster 1, 2, 3: Optimal Threshold = 0.29
+Cluster 0: Optimal Threshold = 0.40
+The optimal thresholds for clusters 1, 2, and 3 are lower (0.29), while cluster 0 has a higher optimal threshold (0.40). This indicates that cluster 0 requires a higher probability threshold to optimize the balance between precision and recall.
+
+Precision and Recall Trade-Offs:
+
+Clusters 1, 2, and 3: These clusters have a relatively similar performance, with precision decreasing as recall increases. This is indicative of a typical trade-off between precision and recall.
+Cluster 0: Shows a slightly different pattern, with a higher optimal threshold suggesting different dynamics in this cluster.
+Performance Range:
+
+Precision: For all clusters, precision starts high and decreases as recall increases, indicating that as the model attempts to capture more true positives, the proportion of false positives also increases.
+Recall: Higher recall means more true positives are identified, but at the cost of precision.
+Business Impact:
+Improved Detection (Recall):
+
+Clusters 1, 2, and 3: The similar optimal thresholds (0.29) across these clusters suggest that a unified strategy for improving detection rates (recall) can be implemented. This can lead to better resource allocation and timely intervention in these neighborhoods.
+Cluster 0: Requires a different threshold (0.40), indicating the need for a tailored approach to optimize detection in this cluster. This might involve different resource management or prioritization strategies.
+Managing False Positives (Precision):
+
+Clusters 1, 2, and 3: The precision decreases as recall increases, suggesting that while more true positives are being detected, the cost of false positives increases. This trade-off needs to be managed carefully to ensure resources are not wasted on non-overdue cases.
+Cluster 0: The higher threshold suggests that the model is more conservative in predicting overdue cases, which could mean fewer false positives but potentially more missed true positives.
+Resource Allocation:
+
+Unified Strategy for Clusters 1, 2, 3: Given the similar optimal thresholds, a unified approach to manage and allocate resources in these clusters could be effective.
+Tailored Strategy for Cluster 0: A separate, more conservative strategy might be required for cluster 0 to manage its unique characteristics.
+Periodic Review and Adjustment:
+
+Continuous Monitoring: Regularly review and adjust the thresholds based on new data to maintain optimal performance. This ensures that the model remains effective over time and adapts to any changes in the data patterns.
+Recommendations:
+Adopt Optimal Thresholds: Implement the optimal thresholds for each cluster to balance precision and recall effectively.
+Monitor Performance: Continuously monitor the performance of the model, especially the precision and recall trade-offs, to ensure that the balance aligns with business objectives.
+Tailored Approaches: Use a unified strategy for clusters 1, 2, and 3, while adopting a tailored approach for cluster 0 to optimize resource allocation and management.
+By following these recommendations, the business can improve the detection of overdue cases while managing the trade-offs between precision and recall, leading to more efficient resource utilization and timely interventions.
 
 Feature importance, KNN interpretations. 
 Highlighted insights. 
