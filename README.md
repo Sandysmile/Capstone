@@ -247,25 +247,36 @@ By addressing these points, I can improve the accuracy and efficiency of identif
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/634d9669-dff7-4cbf-a33c-052174be90de) 
 
 
+Insights from ROC Curves for K-Nearest Neighbors by Clusters
+AUC (Area Under Curve)
+Cluster 1: AUC = 0.83
+Cluster 2: AUC = 0.84
+Cluster 3: AUC = 0.83
+Cluster 0: AUC = 0.81
+Clusters 1, 2, and 3 show good model performance in distinguishing between overdue and non-overdue cases. Cluster 0 has slightly lower AUC but still acceptable.
 
-Here is a concise comparison based on your results:
+Optimal vs. Default Threshold
+Optimal Thresholds:
+Cluster 1: 0.29
+Cluster 2: 0.29
+Cluster 3: 0.29
+Cluster 0: 0.20
+Default Threshold: 0.5 for all clusters
+Optimal thresholds are lower than the default 0.5, improving the model's ability to identify overdue cases.
 
-Cluster 1
-Default Threshold Accuracy: 85.03%
-Optimal Threshold Accuracy: 81.38%
-Trade-Off: Improved recall and precision for overdue cases but increased false positives.
-Cluster 2
-Default Threshold Accuracy: 85.20%
-Optimal Threshold Accuracy: 81.63%
-Trade-Off: Better identification of overdue cases at the expense of more false positives.
-Cluster 3
-Default Threshold Accuracy: 85.02%
-Optimal Threshold Accuracy: 81.17%
-Trade-Off: Increased detection of overdue cases, balancing precision and recall.
-Cluster 0
-Default Threshold Accuracy: 84.60%
-Optimal Threshold Accuracy: 82.65%
-Trade-Off: Improved detection of overdue cases with a slight increase in false positives.
+True Positive Rate (Sensitivity) and False Positive Rate
+Optimal thresholds increase true positive rates while maintaining reasonable false positive rates.
+Red circles (optimal thresholds) are higher on the True Positive Rate axis compared to blue crosses (default threshold), indicating better recall for overdue cases.
+
+Summary
+High AUC Values: Good performance across all clusters (AUC around 0.83 to 0.84).
+Lower Optimal Thresholds: Optimal thresholds are lower, enhancing model performance for overdue cases.
+Improved Recall: Optimal thresholds improve sensitivity, ensuring more overdue cases are detected.
+
+Actions
+Adopt Optimal Thresholds: Implement optimal thresholds to improve overdue case detection across clusters.
+Monitor False Positives: Ensure false positive rates remain acceptable while using lower thresholds.
+Periodic Review: Regularly review and adjust thresholds with new data to maintain optimal performance.
 
 
 
