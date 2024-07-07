@@ -1,25 +1,45 @@
-  # Improve City 311 Services Using ML/AI: A Pilot Project of Predicting Overdue 311 Calls
+# Enhancing City 311 Services: Predicting Potential Overdue Calls with ML 
+  
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/ba6e4052-9a03-451b-bfd9-a3af9d4747cd)
 
 
-## Capstone ML Project Goal: 
+## Project Goal
+The goal of this capstone project is to build a predictive model that incorporates neighborhood socio-economic characteristics, 311 call details, and geo-locations to determine whether 311 calls will be resolved on time or become overdue. By exploring and generating relevant features, I aim to identify an optimized classifier for this prediction task.
 
-Build a model incorporating neighborhood socio-economic characteristics, 311 call details, and geo-locations to predict the outcome of 311 calls—whether they will be on time or overdue. By exploring and generating relevant features, I aim to identify an optimized classifier. 
+## Machine Learning Techniques
+
+### 1. Supervised Learning:
+
+Logistic Regression: A statistical model used to predict the probability of a binary outcome. 
+
+Decision Trees: A model that uses a tree-like graph of decisions and their possible consequences. 
+
+Random Forests: An ensemble learning method that constructs multiple decision trees and merges them to get a more accurate and stable prediction. 
+
+Support Vector Machine (SVM): A classifier that finds the hyperplane that best separates the classes in the feature space. 
 
 
-## ML Techniques:
+### 2. Unsupervised Learning:
 
-Supervised Learning: Various classifiers such as logistic regression, decision trees, random forests, and gradient boosting machines. Unsupervised Learning: K-Means clustering and DBSCAN based on geo and neighborhood characteristics. NLP techniques like TF-IDF and word embeddings to analyze notes and comments. 
+K-Means Clustering: A clustering method used to partition observations into k clusters based on geo and neighborhood characteristics. 
 
 
-## Data Sources: 
+### 3. Natural Language Processing (NLP):
 
-The three data sources were merged for the capstone project
+TF-IDF (Term Frequency-Inverse Document Frequency): A statistical measure used to evaluate the importance of a word in a document relative to a collection of documents. 
 
-1) 311 requests (January to June 2024) (over 163,548 records)
-2) Neighborhood Characteristics (88 neighborhoods)
-3) Geo Locations (latitude and longitude)
+Word Embeddings: Techniques like Word2Vec or GloVe that represent words in continuous vector space. 
+
+
+## Data Sources
+
+The following three data sources were cleabed and merged for the capstone project: 
+
+1. 311 Requests (January to June 2024): Over 163,548 records detailing various service requests.
+2. Neighborhood Characteristics: Data covering 88 neighborhoods, including socio-economic indicators.
+3. Geo Locations: Latitude and longitude data points for precise location-based analysis.
+
 
 ## Methodology: CRISP-DM 
 
@@ -69,8 +89,6 @@ Call Volume and Issue Severity: A higher number of calls in a neighborhood indic
 
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/de4e6f7b-0acc-4ac2-bbec-a78fc0179f99) 
-
-
 
 
 
