@@ -343,7 +343,23 @@ Incident_Case_Type_Binned
 
 
 # 4. Modelling 
-4.1 
+
+4.1 Feature Importance Analysis using Logistic and Random Forest (Top 25% features)
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/295061ab-e2cf-41f4-a136-9b466f8092a2)
+
+4.2 Random Forest Base Model without Validation and Grid Search
+It indicates the issue of overfitting
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/d2bad0ce-b5cf-497b-a4e2-73c01ac40902) 
+
+4.3 Random Forest Base Model with 5 Fold Validation and Grid Serach
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/fb1a6222-21a7-4f17-8af6-cdbe0bc1b10c) 
+
+4.4 Run all classifers to serach the optimal classier
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/57eb385f-fc1b-458f-88c4-c36edc04b557)
+
 # Model Performance Comparision 
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/04bcccd2-d73a-4ef9-ab79-013a03305ebd) 
