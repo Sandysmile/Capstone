@@ -192,12 +192,12 @@ if a case numer is larger than 10 digits. they need to integrate to another syst
 
 - Step 4: Run classifiers again in each of four neighborhood clusters. 
 
-## 3 Data Prepareation (Feature Engineering)
+# 3 Data Prepareation (Feature Engineering)
 
 In this project, serveral feature engineering techniques were employed to enhance the predictive power of the model. 
 The techniques used include binning, target encoding, frequency encoding, and clustering using K-Means. 
 
-3.1 45 New Features Created: ( Please See the Jupter Notebook For details)
+3.1 New Features Created (45): ( Please See the Jupter Notebook For details)
 
 - Higher_GarbageRisk_Flag
 - Queue_target
@@ -284,9 +284,42 @@ None of NLP features are helpful for model consideration.
 
 3.6.1 categorical variables
 
-3.6.2 numerical variables
+Significant Varaibles:
 
-3.6.2.1 correlation among neighborhood variables
+- Garbage_Route_Risk_Category
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/5111baa4-5304-40ea-b65c-598494163e13)
+
+- Due_Flag
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/ddb7630f-6bad-4053-9e67-bcd1be2c38f4)
+
+- Creation_Flag
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/4289659e-2d4b-49d9-9c2e-f13f37566df5)
+
+Incident_Case_Type_Binned
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/de4b3b99-9750-4541-b8c4-dbba7b786a8f)
+
+- Create_Day_Of_Week
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/ab46a5ec-9207-4105-8eeb-022e132667e4)
+
+3.6.2. Findings from Cateogrocal Variables.
+
+- The Timing of Case Creation and Due:
+
+The time when a case is created and its due date significantly impact the likelihood of it being overdue.
+Case Type Matters:
+
+- Different types of cases have varying probabilities of being overdue, indicating that some case types are more prone to delays.
+Garbage Collection Risk:
+
+- Cases related to garbage collection exhibit higher risk factors, affecting their timely resolution.
+
+3.6.2 Numerical Variables
+
+3.6.2.1 Check and Drop Highly Correlated Neighborhood Variables
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/bfc419d7-62fd-4d43-a97a-845e4324bd2f) 
+
+
 3.6.2.2 correlation with target varaibles
 
 3.6.3 outlier handling 
