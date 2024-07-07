@@ -287,42 +287,59 @@ None of NLP features are helpful for model consideration.
 Significant Varaibles:
 
 - Garbage_Route_Risk_Category
+  
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/5111baa4-5304-40ea-b65c-598494163e13)
 
+
 - Due_Flag
+- 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/ddb7630f-6bad-4053-9e67-bcd1be2c38f4)
 
+
 - Creation_Flag
+- 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/4289659e-2d4b-49d9-9c2e-f13f37566df5)
 
-Incident_Case_Type_Binned
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/de4b3b99-9750-4541-b8c4-dbba7b786a8f)
+
+Incident_Case_Type_Binned 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/de4b3b99-9750-4541-b8c4-dbba7b786a8f) 
+
 
 - Create_Day_Of_Week
+- 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/ab46a5ec-9207-4105-8eeb-022e132667e4)
 
-3.6.2. Findings from Cateogrocal Variables.
 
-- The Timing of Case Creation and Due:
+3.6.2. Major Findings from Cateogrocal Variables
 
-The time when a case is created and its due date significantly impact the likelihood of it being overdue.
-Case Type Matters:
+- The timing when a case is created and its due date significantly impact the likelihood of it being overdue.
 
 - Different types of cases have varying probabilities of being overdue, indicating that some case types are more prone to delays.
-Garbage Collection Risk:
 
 - Cases related to garbage collection exhibit higher risk factors, affecting their timely resolution.
-
+  
 3.6.2 Numerical Variables
 
 3.6.2.1 Check and Drop Highly Correlated Neighborhood Variables
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/bfc419d7-62fd-4d43-a97a-845e4324bd2f) 
 
+3.6.2.2 Correlation with Target Varaibles
 
-3.6.2.2 correlation with target varaibles
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/6628f2e9-5ac4-4ae0-8e97-0b084afa1656)
 
-3.6.3 outlier handling 
+
+3.6.3 Remove Outliers using Percentile
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/b69b598f-5fa4-4fef-9a31-462f64cb11b4) 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/97ee75e3-58a4-4c5c-948e-42a16adf1572) 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/96b17f3d-96f1-4500-9574-d4b549ec57cd) 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/fbe935d0-9887-431f-b3d7-956b24a07aae) 
+
 
 
 # 4. Modelling 
