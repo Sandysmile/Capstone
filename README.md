@@ -141,8 +141,55 @@ The data is super imbalanced.
 
 4. Drop unuseful features based on my business reserach.
 
-5. Create New Features
-   For instance, 
+5. Create New Features ( see the jupyeter notebook)
+In this project, advanced feature engineering techniques were employed to enhance the predictive power of the model. The techniques used include binning, target encoding, frequency encoding, and clustering using K-Means. The newly created features are as follows:
+
+Higher_GarbageRisk_Flag
+Queue_target
+Queue_bin
+Status_target
+Status_bin
+Incident_Case_Type_Binned
+Incident_Case_Type_Freq
+Incident_Case_Type_Target
+SLA_Days
+SLA_Type1
+EOD_Priority
+Normalized_SLA_Days
+SLA_Category
+SLA_Urgency
+SLAdays_Overdue_Risk
+SLA_Time_Bucket
+SLA_Deviation_from_Mean
+SLA_Urgency_Index
+SLA_Short_Term_Workload
+SLA_Medium_Term_Workload
+SLA_Long_Term_Workload
+SLA_Urgency_Index_Total
+SLA_Dynamic_Workload
+Calls_Per_Address
+Calls_Per_Street
+Create_To_Close_Diff
+Create_To_Due_Diff
+Garbage_Route_Risk_Category
+Neighborhood_Risk_Category
+Queue_Top
+Customer_SuperNeighborhood_Top
+SLA_Time_Top
+Status_Top
+Division_Top
+Create_Day_Of_Week
+Create_Month_Of_Year
+is_overdue
+Create_Hour_Of_Day
+Due_Day_Of_Week
+Due_Month_Of_Year
+Due_Hour_Of_Day
+Geo_Cluster
+Neighborhood_Cluster
+
+These features are created to try to capture various aspects of the 311 call data, including service level agreements (SLA), priority and workload metrics, frequency of calls by location, and risk categories;
+However only a few ones are useful and included in the final dataset for modelling.
    
 7. Create geo and neighborhood clusters for segment analaysis 
    Create Geoclusters and Neighborhood Clusters to understand the innate features of 311 Calls (why did I do this step before      spliting. My assumation is Geo locations are constant, so are neighborhood clusters0. they are not changes as randomely as 
@@ -152,13 +199,23 @@ The data is super imbalanced.
    
    ![image](https://github.com/Sandysmile/Capstone/assets/20648423/eacb3ee9-32ef-4d8b-acfa-1a6198517d05)
    Findings.
-
    Breakthrough Points:
    Based on the cluster mapping. I choose rerun models based on neighborhood clusters due to it shows clear patterns of cases overdues. The four clusters natural division make the four subset ofs overall data more balanced than the whole dataset
 
+
+8. NLP Analysis
+   
+   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/d2e933ad-1d65-441d-84d6-c446686bc804)
+   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/29ba5fb6-49b9-49b0-94b5-3457a80ee276)
+   The NLP features are not helpful for model consideration. 
+   
+
+  
 8. Final Dataset for Modelling
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/670c2c20-3921-4dc4-8f5f-06ce30c5a5bb) 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/20f88fea-ba4e-4378-b49f-e2926fad76d7) 
 
 
 ##  EDA for closed Cases only 
