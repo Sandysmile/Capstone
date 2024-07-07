@@ -34,7 +34,7 @@ Word Embeddings: Techniques like Word2Vec or GloVe that represent words in conti
 
 ## Data Sources
 
-The following three data sources were cleabed and merged for the capstone project: 
+The following three data sources were cleabed and merged for the capstone project: ( Check Jupter Notebook for Detailed Data Dictionary)
 
 1. 311 Requests (January to June 2024): Over 163,548 records detailing various service requests.
 2. Neighborhood Characteristics: Data covering 88 neighborhoods, including socio-economic indicators.
@@ -84,7 +84,7 @@ Transform 311 operations by predicting overdue calls, enabling better prioritiza
   Business Alignment: Using neighborhood data to segment calls ensures that complex and urgent cases are promptly handled. This enhances service quality and citizen satisfaction
 
 
-### 1.2 Business Assumption and Research
+### 1.2 Business Assumption and Research (for Data Understanding and Preparation(Engineering Engineering)
 
 1.2.1 Assumption 
 Geographical and Neighborhood Affiliation: 311 calls are inherently associated with specific locations or neighborhoods.
@@ -105,7 +105,7 @@ Call Volume and Issue Severity: A higher number of calls in a neighborhood indic
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/8b9878d3-e3ae-4a32-8b64-884f46936822) 
 
 
-1.2.2.3 311 Calls
+1.2.2.3 Call Characteristics
 
 - Type of Issue: Infrastructure-related issues typically take longer to resolve compared to administrative ones.
 
@@ -119,93 +119,85 @@ Call Volume and Issue Severity: A higher number of calls in a neighborhood indic
 - Sentiment Analysis: Sentiment analysis of comments can provide insights into public sentiment and the urgency of issues.
 
 
-
-
-
-
-
-4) 311 Operations (Demand and Supply)
+1.2.2.4 311 Operations (Demand and Supply)
    
-Service Level Agreement (SLA) Indicators: A higher volume of calls within SLA for the same type of issue suggests effective service and issue sensitivity.
-Business Hours Impact: Cases submitted outside business hours are more likely to be overdue, with weekends and holidays following in likelihood. 
+- Service Level Agreement (SLA) Indicators: A higher volume of calls within SLA for the same type of issue suggests effective service and issue sensitivity.
+- Business Hours Impact: Cases submitted outside business hours are more likely to be overdue, with weekends and holidays following in likelihood. 
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/b7969e25-024f-48c3-a89f-d3706ca62a02) 
 
 
+- Call Volume Impact: High call volume can impact the operational capacity to address issues promptly.
+- Operational Capacity: Evaluating the capacity of personnel working on 311 calls, including the impact of after-hours service on call resolution times.
 
-5) Call Volume Impact: High call volume can impact the operational capacity to address issues promptly.
-   
-Operational Capacity: Evaluating the capacity of personnel working on 311 calls, including the impact of after-hours service on call resolution times.
+1.2.2.5  311 Overall Reponse Trends
 
-6) 311 Overall Reponse Trends
-Historical Response Patterns: Understanding historical response times for different issue types helps in predicting future service levels. Temporal Trends: Analysis of the time of week, month, etc., can reveal patterns in call volumes and service delays.
+- Historical Response Patterns: Understanding historical response times for different issue types helps in predicting future service levels.
+- Temporal Trends: Analysis of the time of week, month, etc., can reveal patterns in call volumes and service delays.
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/aed93260-f64e-47d7-9293-6162c0c30b1b) 
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/a34445a4-596f-4cd9-9145-1d72fd6e7271) 
 
 
-7) Garbadge Collection
+1.2.2.6 Garbadge Collection 
    
 Garbage collection schedules and routes significantly impact the volume and distribution of related 311 calls 
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/191856e9-4745-4a6f-abb1-df07c8196764) 
 
 
-8) Tehcnical Integration Barrior
+1.2.2.7 Tehcnical Integration Barrior
 if a case numer is larger than 10 digits. they need to integrate to another system.
 
 
-# Data Understandings:
+# 2 Data Understandings:
 
-This is a pilot study. Data is built from the scratch
-The data is super imbalanced.
+## 2.1 Initial EDA for All Cases ( Closed Cases and Open Cases)
 
+2.1.1. Handing Missing Values
+
+2.2.2. Understand open cases to plan splitting data strategies without data leakage problem. 
+
+2.2.3. Understand date-related columns and coverted them if appliable 
+
+2.2.4. Check the imbalance of the dataset
+   
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/35eb2eb7-2dd8-41d6-a892-986e72112ce8) 
 
+2.2.5. Drop unuseful features based on EDA analysis.
 
-## 1.Initial EDA for All Cases ( Closed Cases and Open Cases)
+2.2.6. Create Clusters for Segment Analaysis 
 
-1. Handing Missing Values
-
-2. Understand open cases to plan splitting data strategies without data leakage problem. 
-
-3. Understand date-related columns and coverted them if appliable 
-
-4. Check the imbalance of the dataset
-
-5. Drop unuseful features based on my business reserach.
-
-
-6. Create geo and neighborhood clusters for segment analaysis 
-   Create Geoclusters and Neighborhood Clusters to understand the innate features of 311 Calls (why did I do this step before      spliting. My assumation is Geo locations are constant, so are neighborhood clusters0. they are not changes as randomely as 
-   311 reported cases.
+- Create Geoclusters
+  
+- Neighborhood Clusters to understand the innate features of 311 Calls
+  (why do I this clustering before data splitting?  My assumation is Geo locations are constant, so are neighborhood clusters0. they are not changes as randomely as 311 reported cases.
 
    ![image](https://github.com/Sandysmile/Capstone/assets/20648423/8849f0a2-ca14-43e4-b69d-90b04899c2e5)
    
    ![image](https://github.com/Sandysmile/Capstone/assets/20648423/eacb3ee9-32ef-4d8b-acfa-1a6198517d05)
    Findings.
-   Breakthrough Points:
-   Based on the cluster mapping. I choose rerun models based on neighborhood clusters due to it shows clear patterns of cases overdues. The four clusters natural division make the four subset ofs overall data more balanced than the whole dataset
-   
 
-## Data Splitting, Preparing and Modelling Stratigic steps :
+## 2.2 Data Splitting, Preparing and Modelling Stratigic steps :
 
-Step 0: seperate the Closed Cases from open cases(without valid closing dates): Use the closed cases to create both a training (training and testing set) and a validation set. 
-This allows me to train the model and evaluate its performance on known outcomes. 
+- Step 0: seperate the Closed Cases from open cases(without valid closing dates): Use the closed cases to create both a training (training and testing set) and a validation set. 
+  This allows me to train the model and evaluate its performance on known outcomes. 
 
-Step 1: Split the closed cases into training and testing datasets.
+- Step 1: Split the closed cases into training and testing datasets.
 
-Step 2: Understand Feature Importance Analysis using a combined techine of Random Forest and Logistic Modelling
+- Step 2: Understand Feature Importance Analysis using a combined techine of Random Forest and Logistic Modelling
 
-Step 3: Run a basemodel using Random Forest and all classifers to identify the optimized classifer.
+- Step 3: Run a basemodel using Random Forest and all classifers to identify the optimized classifer.
 
-Step 4: Run classifiers again in each of four neighborhood clusters. 
+- Step 4: Run classifiers again in each of four neighborhood clusters. 
 
 ## Feature Engineering (creating New Features)
 
 In this project, advanced feature engineering techniques were employed to enhance the predictive power of the model. 
-The techniques used include binning, target encoding, frequency encoding, and clustering using K-Means. The newly created features are as follows:
+The techniques used include binning, target encoding, frequency encoding, and clustering using K-Means. 
+
+The newly created features are as follows:
 
 Higher_GarbageRisk_Flag
 Queue_target
