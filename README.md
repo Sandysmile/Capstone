@@ -127,7 +127,7 @@ The data is super imbalanced.
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/35eb2eb7-2dd8-41d6-a892-986e72112ce8) 
 
 
-# Data Understanding: 
+# Data Basic Understanding: 
 
 ## Initial EDA for All Cases ( Closed Cases and Open Cases)
 
@@ -139,10 +139,38 @@ The data is super imbalanced.
 
 4. Check the imbalance of the dataset
 
-4. Drop unuseful features based on my business reserach.
+5. Drop unuseful features based on my business reserach.
 
-5. Create New Features ( see the jupyeter notebook)
-In this project, advanced feature engineering techniques were employed to enhance the predictive power of the model. The techniques used include binning, target encoding, frequency encoding, and clustering using K-Means. The newly created features are as follows:
+
+6. Create geo and neighborhood clusters for segment analaysis 
+   Create Geoclusters and Neighborhood Clusters to understand the innate features of 311 Calls (why did I do this step before      spliting. My assumation is Geo locations are constant, so are neighborhood clusters0. they are not changes as randomely as 
+   311 reported cases.
+
+   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/8849f0a2-ca14-43e4-b69d-90b04899c2e5)
+   
+   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/eacb3ee9-32ef-4d8b-acfa-1a6198517d05)
+   Findings.
+   Breakthrough Points:
+   Based on the cluster mapping. I choose rerun models based on neighborhood clusters due to it shows clear patterns of cases overdues. The four clusters natural division make the four subset ofs overall data more balanced than the whole dataset
+   
+
+## Data Splitting, Preparing and Modelling Stratigic steps :
+
+Step 0: seperate the Closed Cases from open cases(without valid closing dates): Use the closed cases to create both a training (training and testing set) and a validation set. 
+This allows me to train the model and evaluate its performance on known outcomes. 
+
+Step 1: Split the closed cases into training and testing datasets.
+
+Step 2: Understand Feature Importance Analysis using a combined techine of Random Forest and Logistic Modelling
+
+Step 3: Run a basemodel using Random Forest and all classifers to identify the optimized classifer.
+
+Step 4: Run classifiers again in each of four neighborhood clusters. 
+
+## Feature Engineering (creating New Features)
+
+In this project, advanced feature engineering techniques were employed to enhance the predictive power of the model. 
+The techniques used include binning, target encoding, frequency encoding, and clustering using K-Means. The newly created features are as follows:
 
 Higher_GarbageRisk_Flag
 Queue_target
@@ -191,19 +219,9 @@ Neighborhood_Cluster
 These features are created to try to capture various aspects of the 311 call data, including service level agreements (SLA), priority and workload metrics, frequency of calls by location, and risk categories;
 However only a few ones are useful and included in the final dataset for modelling.
    
-7. Create geo and neighborhood clusters for segment analaysis 
-   Create Geoclusters and Neighborhood Clusters to understand the innate features of 311 Calls (why did I do this step before      spliting. My assumation is Geo locations are constant, so are neighborhood clusters0. they are not changes as randomely as 
-   311 reported cases.
-
-   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/8849f0a2-ca14-43e4-b69d-90b04899c2e5)
-   
-   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/eacb3ee9-32ef-4d8b-acfa-1a6198517d05)
-   Findings.
-   Breakthrough Points:
-   Based on the cluster mapping. I choose rerun models based on neighborhood clusters due to it shows clear patterns of cases overdues. The four clusters natural division make the four subset ofs overall data more balanced than the whole dataset
 
 
-8. NLP Analysis
+8. NLP Analysis 
    
    ![image](https://github.com/Sandysmile/Capstone/assets/20648423/d2e933ad-1d65-441d-84d6-c446686bc804)
    ![image](https://github.com/Sandysmile/Capstone/assets/20648423/29ba5fb6-49b9-49b0-94b5-3457a80ee276)
@@ -218,22 +236,14 @@ However only a few ones are useful and included in the final dataset for modelli
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/20f88fea-ba4e-4378-b49f-e2926fad76d7) 
 
 
-##  EDA for closed Cases only 
+##  Deep EDA for Selected Features
 
-1. categorical variables plotting
+1. categorical variables plottin
 2. numerical variables (correlations and remove outliers)
-3. 
+3. correlation among neighborhood variables
+4. correlation with target varaibles
+5. outlier
 
-# Data Splitting and Modelling Steps:
-
-Step 0: seperate the Closed Cases from open cases(without valid closing dates): Use the closed cases to create both a training (training and testing set) and a validation set. 
-This allows me to train the model and evaluate its performance on known outcomes. 
-
-Step 1: Split the whole dataset into closed cases ( Trained and testing datasets) and open cases (validation dataset)
-
-Step 2: Run a basemodel using Random Forest and all classifers to identify the optimized classifer.
-
-Step 3: Run classifiers again in each of four neighborhood clusters. 
 
 
 
