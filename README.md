@@ -46,30 +46,50 @@ The following three data sources were cleabed and merged for the capstone projec
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/4c48f9af-b92c-4a2e-94f1-25e3393aeaf8) 
 
 
-### Business Understanding/Goals/Reserach 
+## Business Understanding 
 
-*Stakeholders*: City management, 311 operators, and citizens.
+### Business Context, Goals, and Research 
 
-*Pain Points*: Inefficient resource allocation, delayed response times, and suboptimal service quality.
+#### Stakeholders:
 
-*Value Proposition*: Transform 311 operations by predicting overdue calls, enabling better prioritization and resource allocation.
+- City Management: Oversees the overall operations and resource allocation for the city services. 
+- 311 Operators: Handle and manage incoming service requests from citizens. 
 
-*Desired Business Outcome*: Timely process cases that are most likely to be overdue.
+#### Pain Points:
 
-*What's Predicted?* How likely is an incoming call to be overdue?
+- Inefficient Resource Allocation: Current allocation of resources may not be optimized, leading to operation delays in service delivery. 
+- Delayed Response Times: Slow response times to service requests, causing dissatisfaction among citizens. 
+- Suboptimal Service Quality: Lack of predictive insights leading to a reactive rather than proactive approach. 
 
-*Current Approach:* 311 cases are currently managed without incorporating predictive insights into service outcomes.
+#### Value Proposition: 
 
-### Business Goal/Outcome: 
+Transform 311 operations by predicting overdue calls, enabling better prioritization of service requests and efficient resource allocation. This will result in improved response times and higher citizen satisfaction levels.
 
-1) Targeted Resource Allocation and Enhanced Operation Efficiency
-   By predicting which 311 calls are most likely to be overdue, we can prioritize high-priority cases, ensuring that the most critical issues receive timely attention. This targeted approach leads to more effective use of city resources and improved response times.
 
-3) Improved Service Quality
-   ML-driven predictive analytics can segment calls by urgency and complexity, enabling more precise resource allocation. This ensures that complex and urgent cases are handled promptly, enhancing overall service quality and citizen satisfaction.
+#### Business Objectives and Outcomes
+- Objective #1: Predict which 311 calls are most likely to be overdue.
+- Outcome #1: Prioritize high-priority cases, ensuring that the most critical issues receive timely attention. This leads to more effective use of city resources and improved response times.
 
-Proposed Enhancement Using ML:
-By integrating predictive analytics, we can better anticipate which cases are likely to be overdue, allowing us to prioritize and allocate resources more effectively. This proactive approach aims to enhance service efficiency and improve overall satisfaction.
+- Objective #2: Utilize ML-driven predictive analytics to segment calls by neighborhood characteristics.
+- Outcome #2: Ensure that complex and urgent cases are handled promptly, enhancing overall service quality and citizen satisfaction.
+
+
+#### Aligned Machine Learning Goals
+
+ML Goal #1: Develop and utilize classifiers to predict the likelihood of a 311 call being overdue.
+Alignment: By accurately predicting overdue calls, the model enables the prioritization of high-priority cases, ensuring critical issues receive timely attention. This aligns directly with the goal of effective resource use and improved response times.
+
+ML Goal #2: Analyze neighborhood characteristics to segment 311 calls and identify urgent and complex cases.
+Alignment: Using neighborhood data to segment calls ensures that complex and urgent cases are promptly handled. This enhances service quality and citizen satisfaction, aligning with the business objective of improved service delivery.
+
+### Summary
+the project aims to predict Overdue Calls: Use predictive models to forecast which calls will be overdue, allowing for proactive prioritization and resource allocation.
+Segment Calls by Neighborhood Characteristics: Leverage neighborhood data to ensure complex and urgent cases are identified and addressed promptly, enhancing overall service quality and citizen satisfaction.
+This alignment ensures that the machine learning efforts directly support the business objectives, leading to more efficient and effective 311 service operations.
+
+
+
+
 
 
 ### Business Reserach for Feature Engineering
