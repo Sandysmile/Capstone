@@ -194,7 +194,7 @@ if a case numer is larger than 10 digits. they need to integrate to another syst
 
 ## 3 Data Prepareation (Feature Engineering)
 
-In this project, advanced feature engineering techniques were employed to enhance the predictive power of the model. 
+In this project, serveral feature engineering techniques were employed to enhance the predictive power of the model. 
 The techniques used include binning, target encoding, frequency encoding, and clustering using K-Means. 
 
 3.1 45 New Features Created: ( Please See the Jupter Notebook For details)
@@ -244,34 +244,34 @@ The techniques used include binning, target encoding, frequency encoding, and cl
 - Geo_Cluster
 - Neighborhood_Cluster
 
-3.2. Findings 
+3.2. New Features Selection
 
 Only 18 new features are included in the final dataset for modelling.
-Feature List
-Neighborhood_cluster
-Higher_GarbageRisk_Flag
-Incident_Case_Type_Binned
-Normalized_SLA_Days
-SLA_Dynamic_Workload
-Create_To_Close_Diff
-Creation_Flag
-Due_Flag
-Garbage_Route_Risk_Category
-Sentiment_Polarity
-Sentiment_Subjectivity
-Due_Day_Of_Week
-Technical_Interface
-Create_Day_Of_Week
-Queue_Top
-Status_Top
-Division_Top
+
+- Neighborhood_cluster
+- Higher_GarbageRisk_Flag
+- Incident_Case_Type_Binned
+- Normalized_SLA_Days
+- SLA_Dynamic_Workload
+- Create_To_Close_Diff
+- Creation_Flag
+- Due_Flag
+- Garbage_Route_Risk_Category
+- Sentiment_Polarity
+- Sentiment_Subjectivity
+- Due_Day_Of_Week
+- Technical_Interface
+- Create_Day_Of_Week
+- Queue_Top
+- Status_Top
+- Division_Top
    
 
 3.3. NLP Features and Correlation with Target Variable
  
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/29ba5fb6-49b9-49b0-94b5-3457a80ee276)
    
-3.4 NLP Findings
+3.4 NLP Feature Selection
 
 None of NLP features are helpful for model consideration. 
    
@@ -280,17 +280,20 @@ None of NLP features are helpful for model consideration.
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/20f88fea-ba4e-4378-b49f-e2926fad76d7) 
 
 
-##  Deep EDA for Selected Features
+3.6 Deep EDA for Final Dataset's Features
 
-1. categorical variables
-3. numerical variables (correlations and remove outliers)
-4. correlation among neighborhood variables
-5. correlation with target varaibles
-6. outlier
+3.6.1 categorical variables
+
+3.6.2 numerical variables
+
+3.6.2.1 correlation among neighborhood variables
+3.6.2.2 correlation with target varaibles
+
+3.6.3 outlier handling 
 
 
-
-
+# 4. Modelling 
+4.1 
 # Model Performance Comparision 
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/04bcccd2-d73a-4ef9-ab79-013a03305ebd) 
