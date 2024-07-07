@@ -179,7 +179,7 @@ if a case numer is larger than 10 digits. they need to integrate to another syst
    ![image](https://github.com/Sandysmile/Capstone/assets/20648423/eacb3ee9-32ef-4d8b-acfa-1a6198517d05)
    Findings.
 
-## 2.2 Data Splitting, Preparing and Modelling Stratigic steps :
+## 2.2.7. Data Splitting, Preparing and Modelling Stratigic steps :
 
 - Step 0: seperate the Closed Cases from open cases(without valid closing dates): Use the closed cases to create both a training (training and testing set) and a validation set. 
   This allows me to train the model and evaluate its performance on known outcomes. 
@@ -192,12 +192,12 @@ if a case numer is larger than 10 digits. they need to integrate to another syst
 
 - Step 4: Run classifiers again in each of four neighborhood clusters. 
 
-## 2.3 Feature Engineering (creating New Features)
+## 3 Data Prepareation (Feature Engineering)
 
 In this project, advanced feature engineering techniques were employed to enhance the predictive power of the model. 
 The techniques used include binning, target encoding, frequency encoding, and clustering using K-Means. 
 
-New features created: ( see the Jupter Notebook For details)
+3.1 45 New Features Created: ( Please See the Jupter Notebook For details)
 
 - Higher_GarbageRisk_Flag
 - Queue_target
@@ -244,23 +244,38 @@ New features created: ( see the Jupter Notebook For details)
 - Geo_Cluster
 - Neighborhood_Cluster
 
-2.4. Findings 
-Only a few ones are useful and included in the final dataset for modelling.
+3.2. Findings 
+
+Only 18 new features are included in the final dataset for modelling.
+Feature List
+Neighborhood_cluster
+Higher_GarbageRisk_Flag
+Incident_Case_Type_Binned
+Normalized_SLA_Days
+SLA_Dynamic_Workload
+Create_To_Close_Diff
+Creation_Flag
+Due_Flag
+Garbage_Route_Risk_Category
+Sentiment_Polarity
+Sentiment_Subjectivity
+Due_Day_Of_Week
+Technical_Interface
+Create_Day_Of_Week
+Queue_Top
+Status_Top
+Division_Top
    
 
-
-2.5. NLP Features and Correlation with Target Variable
+3.3. NLP Features and Correlation with Target Variable
  
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/29ba5fb6-49b9-49b0-94b5-3457a80ee276)
    
-2.6 NLP Findings
-The NLP features are not helpful for model consideration. 
+3.4 NLP Findings
+
+None of NLP features are helpful for model consideration. 
    
-
-  
-8. Final Dataset for Modelling
-
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/670c2c20-3921-4dc4-8f5f-06ce30c5a5bb) 
+3.5 Final Dataset for Modelling
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/20f88fea-ba4e-4378-b49f-e2926fad76d7) 
 
