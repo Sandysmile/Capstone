@@ -192,67 +192,69 @@ if a case numer is larger than 10 digits. they need to integrate to another syst
 
 - Step 4: Run classifiers again in each of four neighborhood clusters. 
 
-## Feature Engineering (creating New Features)
+## 2.3 Feature Engineering (creating New Features)
 
 In this project, advanced feature engineering techniques were employed to enhance the predictive power of the model. 
 The techniques used include binning, target encoding, frequency encoding, and clustering using K-Means. 
 
-The newly created features are as follows:
+New features created: ( see the Jupter Notebook For details)
 
-Higher_GarbageRisk_Flag
-Queue_target
-Queue_bin
-Status_target
-Status_bin
-Incident_Case_Type_Binned
-Incident_Case_Type_Freq
-Incident_Case_Type_Target
-SLA_Days
-SLA_Type1
-EOD_Priority
-Normalized_SLA_Days
-SLA_Category
-SLA_Urgency
-SLAdays_Overdue_Risk
-SLA_Time_Bucket
-SLA_Deviation_from_Mean
-SLA_Urgency_Index
-SLA_Short_Term_Workload
-SLA_Medium_Term_Workload
-SLA_Long_Term_Workload
-SLA_Urgency_Index_Total
-SLA_Dynamic_Workload
-Calls_Per_Address
-Calls_Per_Street
-Create_To_Close_Diff
-Create_To_Due_Diff
-Garbage_Route_Risk_Category
-Neighborhood_Risk_Category
-Queue_Top
-Customer_SuperNeighborhood_Top
-SLA_Time_Top
-Status_Top
-Division_Top
-Create_Day_Of_Week
-Create_Month_Of_Year
-is_overdue
-Create_Hour_Of_Day
-Due_Day_Of_Week
-Due_Month_Of_Year
-Due_Hour_Of_Day
-Geo_Cluster
-Neighborhood_Cluster
+- Higher_GarbageRisk_Flag
+- Queue_target
+- Queue_bin
+- Status_target
+- Status_bin
+- Incident_Case_Type_Binned
+- Incident_Case_Type_Freq
+- Incident_Case_Type_Target
+- SLA_Days
+- SLA_Type1
+- EOD_Priority
+- Normalized_SLA_Days
+- SLA_Category
+- SLA_Urgency
+- SLAdays_Overdue_Risk
+- SLA_Time_Bucket
+- SLA_Deviation_from_Mean
+- SLA_Urgency_Index
+- SLA_Short_Term_Workload
+- SLA_Medium_Term_Workload
+- SLA_Long_Term_Workload
+- SLA_Urgency_Index_Total
+- SLA_Dynamic_Workload
+- Calls_Per_Address
+- Calls_Per_Street
+- Create_To_Close_Diff
+- Creation_Flag
+- Due_Flag
+- Create_To_Due_Diff
+- Garbage_Route_Risk_Category
+- Neighborhood_Risk_Category
+- Queue_Top
+- Customer_SuperNeighborhood_Top
+- SLA_Time_Top
+- Status_Top
+- Division_Top
+- Create_Day_Of_Week
+- Create_Month_Of_Year
+- Create_Hour_Of_Day
+- Due_Day_Of_Week
+- Due_Month_Of_Year
+- Due_Hour_Of_Day
+- Geo_Cluster
+- Neighborhood_Cluster
 
-These features are created to try to capture various aspects of the 311 call data, including service level agreements (SLA), priority and workload metrics, frequency of calls by location, and risk categories;
-However only a few ones are useful and included in the final dataset for modelling.
+2.4. Findings 
+Only a few ones are useful and included in the final dataset for modelling.
    
 
 
-8. NLP Analysis 
+2.5. NLP Features and Correlation with Target Variable
+ 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/29ba5fb6-49b9-49b0-94b5-3457a80ee276)
    
-   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/d2e933ad-1d65-441d-84d6-c446686bc804)
-   ![image](https://github.com/Sandysmile/Capstone/assets/20648423/29ba5fb6-49b9-49b0-94b5-3457a80ee276)
-   The NLP features are not helpful for model consideration. 
+2.6 NLP Findings
+The NLP features are not helpful for model consideration. 
    
 
   
@@ -265,11 +267,11 @@ However only a few ones are useful and included in the final dataset for modelli
 
 ##  Deep EDA for Selected Features
 
-1. categorical variables plottin
-2. numerical variables (correlations and remove outliers)
-3. correlation among neighborhood variables
-4. correlation with target varaibles
-5. outlier
+1. categorical variables
+3. numerical variables (correlations and remove outliers)
+4. correlation among neighborhood variables
+5. correlation with target varaibles
+6. outlier
 
 
 
