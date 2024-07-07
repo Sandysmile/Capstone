@@ -46,50 +46,42 @@ The following three data sources were cleabed and merged for the capstone projec
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/4c48f9af-b92c-4a2e-94f1-25e3393aeaf8) 
 
 
-## Business Understanding 
+## 1. Business Understanding 
 
-### Business Context, Goals, and Research 
+### 1.1 Business Context/Objectives and ML Goals
 
-#### Stakeholders:
+#### 1.1.1 Stakeholders:
 
 - City Management: Oversees the overall operations and resource allocation for the city services. 
 - 311 Operators: Handle and manage incoming service requests from citizens. 
 
-#### Pain Points:
+#### 1.1.2 Pain Points:
 
 - Inefficient Resource Allocation: Current allocation of resources may not be optimized, leading to operation delays in service delivery. 
 - Delayed Response Times: Slow response times to service requests, causing dissatisfaction among citizens. 
 - Suboptimal Service Quality: Lack of predictive insights leading to a reactive rather than proactive approach. 
 
-#### Value Proposition: 
+#### 1.1.3 Value Proposition: 
 
 Transform 311 operations by predicting overdue calls, enabling better prioritization of service requests and efficient resource allocation. This will result in improved response times and higher citizen satisfaction levels.
 
 
-#### Business Objectives and Outcomes
+#### 1.1.4 Business Objectives and Outcomes 
+
 - Objective #1: Predict which 311 calls are most likely to be overdue.
-- Outcome #1: Prioritize high-priority cases, ensuring that the most critical issues receive timely attention. This leads to more effective use of city resources and improved response times.
+  Outcome #1: Prioritize high-priority cases, ensuring that the most critical issues receive timely attention. This leads to more effective use of city resources and improved response times.
 
 - Objective #2: Utilize ML-driven predictive analytics to segment calls by neighborhood characteristics.
-- Outcome #2: Ensure that complex and urgent cases are handled promptly, enhancing overall service quality and citizen satisfaction.
+  Outcome #2: Ensure that complex and urgent cases are handled promptly, enhancing overall service quality and citizen satisfaction.
 
 
-#### Aligned Machine Learning Goals
+#### 1.1.5 Aligned Machine Learning Goals
 
-ML Goal #1: Develop and utilize classifiers to predict the likelihood of a 311 call being overdue.
-Alignment: By accurately predicting overdue calls, the model enables the prioritization of high-priority cases, ensuring critical issues receive timely attention. This aligns directly with the goal of effective resource use and improved response times.
+- ML Goal #1: Develop and utilize classifiers to predict the likelihood of a 311 call being overdue.
+  Business Alignment: By accurately predicting overdue calls, the model enables the prioritization of high-priority cases, ensuring critical issues receive timely attention. 
 
-ML Goal #2: Analyze neighborhood characteristics to segment 311 calls and identify urgent and complex cases.
-Alignment: Using neighborhood data to segment calls ensures that complex and urgent cases are promptly handled. This enhances service quality and citizen satisfaction, aligning with the business objective of improved service delivery.
-
-### Summary
-the project aims to predict Overdue Calls: Use predictive models to forecast which calls will be overdue, allowing for proactive prioritization and resource allocation.
-Segment Calls by Neighborhood Characteristics: Leverage neighborhood data to ensure complex and urgent cases are identified and addressed promptly, enhancing overall service quality and citizen satisfaction.
-This alignment ensures that the machine learning efforts directly support the business objectives, leading to more efficient and effective 311 service operations.
-
-
-
-
+- ML Goal #2: Analyze neighborhood characteristics to segment 311 calls and identify urgent and complex cases.
+  Business Alignment: Using neighborhood data to segment calls ensures that complex and urgent cases are promptly handled. This enhances service quality and citizen satisfaction
 
 
 ### Business Reserach for Feature Engineering
@@ -115,7 +107,6 @@ Call Volume and Issue Severity: A higher number of calls in a neighborhood indic
 3) 311 Calls
    
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/f2be828f-cd6d-4793-81c3-f00bdbfe33fa) 
-
 
 
 Type of Issue: Infrastructure-related issues typically take longer to resolve compared to administrative ones.
@@ -157,7 +148,8 @@ Garbage collection schedules and routes significantly impact the volume and dist
 8) Tehcnical Integration Barrior
 if a case numer is larger than 10 digits. they need to integrate to another system.
 
-Data Understandings:
+
+# Data Understandings:
 
 This is a pilot study. Data is built from the scratch
 The data is super imbalanced.
@@ -165,9 +157,7 @@ The data is super imbalanced.
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/35eb2eb7-2dd8-41d6-a892-986e72112ce8) 
 
 
-# Data Basic Understanding: 
-
-## Initial EDA for All Cases ( Closed Cases and Open Cases)
+## 1.Initial EDA for All Cases ( Closed Cases and Open Cases)
 
 1. Handing Missing Values
 
