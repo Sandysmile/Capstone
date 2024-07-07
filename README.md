@@ -84,33 +84,34 @@ Transform 311 operations by predicting overdue calls, enabling better prioritiza
   Business Alignment: Using neighborhood data to segment calls ensures that complex and urgent cases are promptly handled. This enhances service quality and citizen satisfaction
 
 
-### Business Reserach for Feature Engineering
+### 1.2 Business Assumption and Research
 
-1) Neighborhood
-Geographical Affiliation: 311 calls are inherently associated with specific locations or neighborhoods.
-Clustering in Deteriorating Areas: 311 calls tend to cluster in neighborhoods with deteriorating physical conditions and lack of services.
-Call Volume and Issue Severity: A higher number of calls in a neighborhood indicates greater intensity and severity of the issues.
+1.2.1 Assumption 
+Geographical and Neighborhood Affiliation: 311 calls are inherently associated with specific locations or neighborhoods.
 
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/8b9878d3-e3ae-4a32-8b64-884f46936822) 
+1.2.2 Research Areas 
 
+1.2.2.1 Location (Lat and Long)
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/bcd58ad1-6d7d-4cad-97d2-44fedb66c0d6) 
 
 
+1.2.2.2 Neighborhood Attributes
+
+Clustering in Deteriorating Areas: 311 calls tend to cluster in neighborhoods with deteriorating physical conditions and lack of services.
+Call Volume and Issue Severity: A higher number of calls in a neighborhood indicates greater intensity and severity of the issues.
+
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/c5bbc932-ba16-4a70-8236-a21b708c5188) 
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/8b9878d3-e3ae-4a32-8b64-884f46936822) 
 
 
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/de4e6f7b-0acc-4ac2-bbec-a78fc0179f99) 
-
-
-
-3) 311 Calls
+1.2.2.3 311 Calls
    
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/f2be828f-cd6d-4793-81c3-f00bdbfe33fa) 
 
-
 Type of Issue: Infrastructure-related issues typically take longer to resolve compared to administrative ones.
-Call Patterns and Trends: Analyzing the patterns and trends in call types to understand the nature and recurrence of issues. Recurrent Incident Address: An increase in calls for the same address highlights the recurring nature of problems.
+Call Patterns and Trends: Analyzing the patterns and trends in call types to understand the nature and recurrence of issues. 
+Recurrent Incident Address: An increase in calls for the same address highlights the recurring nature of problems.
 Case Resolution Complexity: The resolution time of a case indicates its complexity, where Natural Language Processing (NLP) can analyze comments to determine this.
 Sentiment Analysis: Sentiment analysis of comments can provide insights into public sentiment and the urgency of issues.
 
