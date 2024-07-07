@@ -106,16 +106,22 @@ Call Volume and Issue Severity: A higher number of calls in a neighborhood indic
 
 
 1.2.2.3 311 Calls
-   
-![image](https://github.com/Sandysmile/Capstone/assets/20648423/f2be828f-cd6d-4793-81c3-f00bdbfe33fa) 
 
-Type of Issue: Infrastructure-related issues typically take longer to resolve compared to administrative ones.
-Call Patterns and Trends: Analyzing the patterns and trends in call types to understand the nature and recurrence of issues. 
-Recurrent Incident Address: An increase in calls for the same address highlights the recurring nature of problems.
-Case Resolution Complexity: The resolution time of a case indicates its complexity, where Natural Language Processing (NLP) can analyze comments to determine this.
-Sentiment Analysis: Sentiment analysis of comments can provide insights into public sentiment and the urgency of issues.
+- Type of Issue: Infrastructure-related issues typically take longer to resolve compared to administrative ones.
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/f2be828f-cd6d-4793-81c3-f00bdbfe33fa)
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/6d184a3a-cc78-418a-97c3-84f1e2e0abcf) 
+
+- Call Patterns and Trends: Analyzing the patterns and trends in call types to understand the nature and recurrence of issues. 
+- Recurrent Incident Address: An increase in calls for the same address highlights the recurring nature of problems.
+- Case Resolution Complexity: The resolution time of a case indicates its complexity, where Natural Language Processing (NLP) can analyze comments to determine this.
+- Sentiment Analysis: Sentiment analysis of comments can provide insights into public sentiment and the urgency of issues.
+
+
+
+
+
 
 
 4) 311 Operations (Demand and Supply)
