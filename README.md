@@ -348,6 +348,12 @@ Incident_Case_Type_Binned
 
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/295061ab-e2cf-41f4-a136-9b466f8092a2)
 
+Recommended Features for Modelling 
+
+![image](https://github.com/Sandysmile/Capstone/assets/20648423/877da28b-5950-443f-916b-bd31b8a3ea4b) 
+
+
+
 4.2 Random Forest Base Model without Validation and Grid Search
 It indicates the issue of overfitting
 ![image](https://github.com/Sandysmile/Capstone/assets/20648423/d2bad0ce-b5cf-497b-a4e2-73c01ac40902) 
